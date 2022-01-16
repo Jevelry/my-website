@@ -18,14 +18,19 @@
     height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .i-intro{
     font-size: 30px;
     font-weight: 300;
 }
 .i-name{
-    font-size: 60px;
+    font-size: 6rem;
+    font-weight: 900;
+        font-family: "Nunito",
+        sans-serif;
+
+   
 }
 .i-title {
     height: 50px;
@@ -33,27 +38,32 @@
 }
 .i-title-wrapper{
     height: 100%;
-    animation: move 10s ease-in-out infinite alternate;
+    animation: move 4s ease-in-out infinite alternate;
 }
 @keyframes  move {
-    25%{
+    100%{
         transform: translateY(-50px);
     }
-    50% {
-        transform: translateY(-100px);
-    }
-    75% {
-        transform: translateY(-150px);
-    }
-    100% {
-        transform: translateY(-200px);
-    }
+
+}
+.i-desc{
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    
+}
+.logo{
+    height: 12%;
+    width: 7%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 .i-title-item{
     height: 50px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
-    color: rgb(28, 119, 88);
+    color: rgb(195, 83, 130);
     display: flex;
     align-items: center;
 }
@@ -62,13 +72,52 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
+    
+}
+.i-nav{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    margin-left: 5%;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 26px;
+    font-weight: bold;
+}
+li{
+    cursor: pointer;
+}
+a:hover{
+    color: yellow;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: var(0.5s);
 }
 .i-bg{
-clip-path: polygon(100% 0%, 66% 0%, 32% 0%, 0% 0%, 23% 25%, 9% 55%, 28% 78%, 17% 100%, 100% 100%, 100% 41%, 100% 23%);
-position: absolute;
+clip-path: polygon(100% 0%, 0% 0%, 33% 28%, 20% 50%, 60% 63%, 32% 83%, 100% 100%);
+    position: absolute;
     background-color: #6c63ff;
     width: 100%;
     height: 100%;
     top: 0;
-    right: 0;
+    right: 0;   
+
+}
+
+@media screen and (max-width: 480px){
+    .i{
+        flex-direction: column;
+    }
+    .i-left-wrapper{
+        padding:10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+    .i-desc{
+        display: none;
+    }
 }

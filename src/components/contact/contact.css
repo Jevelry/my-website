@@ -1,36 +1,41 @@
 .c{
-    height: 100vh;
+    height: 65vh;
     position: relative;
+    overflow: hidden;
 }
 .c-bg {
     width: 20px;
-    height: 100%;
-    background-color: aqua;
+    height: 110%;
+    background-color: #6c63ff;
     position: absolute;
 }
 .c-wrapper{
     padding: 50px;
     display: flex;
+
 }
 .c-left{
     flex: 1;
+    margin-left: 3%;
 }
 .c-right{
     flex: 1;
     display: flex;
-    align-items: center;
+    
     flex-direction: column;
     justify-content: center;
 }
 .c-title {
     font-size: 60px;
     width: 80%;
+    font-weight: bold;
 }
 .c-info-item{
     display: flex;
     align-items: center;
     margin: 50px 0px;
     width: 70%;
+    font-size: 25px;
 }
 .c-icon{
     width: 30px;
@@ -39,9 +44,12 @@
 }
 .c-desc{
     font-weight: 200;
+    margin-top: 10px;
+    font-size: 24px;
 }
 form{
     margin-top: 20px;
+    
 }
 input {
     width: 50%;
@@ -51,12 +59,14 @@ input {
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    font-size: 24px;
 }
 textarea{
-    width: 100%;
+    width: 70%;
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    font-size: 24px;
 
 }
 button{
@@ -66,4 +76,35 @@ button{
     color: white;
     font-weight: 500;
     cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .c-wrapper {
+        flex-direction: column;
+        padding: 0px 50px;
+
+    }
+    .c-title{
+        font-size: 30px;
+    }
+    .c-info-item{
+        margin: 20px 0px;
+        width: 100%;
+    }
+    .c-desc{
+        display: none;
+    }
+    form{
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    input{
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+
 }
