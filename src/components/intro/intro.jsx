@@ -1,6 +1,6 @@
 import "./intro.css"
-import Me from "../../img/me.png"
-import Logo from "../../img/logo2.png"
+import Face from "../../img/face.png"
+import Logo from "../../img/logo.png"
 
 function intro() {
     return (
@@ -20,7 +20,7 @@ function intro() {
                         </div>
                     </div>
                     <p className="i-desc">
-                        Anything you want in life can be achieved through hard work
+                        <i>Happiness is the journey not the destination</i>
                     </p>
                 </div>
 
@@ -41,7 +41,7 @@ function intro() {
                     </ul>
                    
                 </div>
-                {/* <img src={Me} alt="" className="i-img" /> */}
+                {<img src={Face} alt="" className="i-img" /> }
             </div>
         </div>
     )

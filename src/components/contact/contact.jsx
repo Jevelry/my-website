@@ -1,6 +1,8 @@
 import "./contact.css";
-import Phone from "../../img/phone.png";
-import Address from "../../img/address.png";
+
+import Github from "../../img/github.svg";
+import Linkedin from "../../img/linkedin.svg";
+
 import Email from "../../img/email.png";
 import { useContext, useRef, useState } from "react";
 import emailjs from 'emailjs-com';
@@ -37,18 +39,18 @@ const Contact = () => {
                     <div className="c-info">
                         <div className="c-info-item">
                             <img 
-                            src={Phone} 
-                            alt="" 
+                            src={Github} 
+                            alt="git" 
                             className="c-icon" />
-                            0420987677
+                            github.com/jevelry
                         </div>
                         <div className="c-info-item">
-                            <img className="c-icon" src = {Email} alt = "" />
+                            <img className="c-icon" src = {Email} alt = "email" />
                             kevin.huang6541@gmail.com
                         </div>
                         <div className="c-info-item">
-                            <img className="c-icon" src={Address} alt="" />
-                            19 Bowen Street
+                            <img className="c-icon" src={Linkedin} alt="linkedin" />
+                            linkedin.com/in/jevelry/
                         </div>
                     </div>
                 </div>
@@ -63,7 +65,7 @@ const Contact = () => {
                         <textarea style={{ backgroundColor: darkMode && "#333" }} rows = "5" placeholder="Message" name = "message"/>
                         <br/>
                         <button>Submit</button>
-                        {done && "  Done!"}
+                        {done && "   Done!"}
                     </form>
                 </div>
             </div>

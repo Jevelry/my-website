@@ -1,7 +1,8 @@
 import "./product.css"
-import Cat from "../../img/cat.png"
-import Git from "../../img/github.svg"
-const product = () => {
+import Loopmania from "../../img/loopmania2.png"
+import Tcp from "../../img/tcp.png"
+
+const loopmania = () => {
     return (
         <div class="sw-projects-cards" id="sw-projects-card2">
             <div class="card-content">
@@ -11,23 +12,27 @@ const product = () => {
                 </div>
                 <div class="sw-projects-content">
                     <div class="sw-projects-img-container">
-                        <img class="sw-projects-img" src={Cat} alt="cat"/>
+                        <img class="sw-projects-img" src={Tcp} alt="Loopmania game" />
                     </div>
                     <div class="sw-projects-info-container">
                         <div class="sw-projects-text">
                             <ul>
-                                <li>Built a tower defence game using Java for the backend 
+                                <li>Built a tower defence game using Java for the backend
                                     and JavaFx for the frontend
                                 </li>
-                                <li>
-                                    Player travels around a looped path battling enemies 
-                                    and acquiring gold to upgrade items. Player is allowed 
-                                    to purchase items from a shop and place towers to help 
-                                    clear the game
+                                <li>Coordinated with team members to realize the groups design goals.
+
                                 </li>
                                 <li>
-                                    Constructed various towers, 
-                                    enemies and allies in accordance to object-oriented programming principles 
+                                    Player travels around a looped path battling enemies
+                                    and acquiring gold to upgrade items. Player is allowed
+                                    to purchase items from a shop and place towers to help
+                                    clear the game
+                                </li>
+
+                                <li>
+                                    Constructed various towers,
+                                    enemies and allies in accordance to object-oriented programming principles
                                 </li>
                             </ul>
                         </div>
@@ -43,12 +48,13 @@ const product = () => {
                             </button>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     )
 }
 
-export default product
+export default loopmania;
+
 

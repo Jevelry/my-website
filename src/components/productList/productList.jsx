@@ -1,6 +1,6 @@
-import Product from "../product/product"
+import Loopmania from "../product/loopmania"
+import Website from "../product/website"
 import "./productList.css"
-import Git from "../../img/github.png"
 
 const productList = () => {
     return (
@@ -12,9 +12,9 @@ const productList = () => {
 
             </div>
             <div className="p1-list">
-                <Product/>
-                <Product />
-                <Product />
+                <Loopmania/>
+                <Website/>
+
 
             </div>
             <div className="pl-github">
