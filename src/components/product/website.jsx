@@ -1,47 +1,49 @@
 import "./product.css"
-import Website from "../../img/website.png"
-const website = () => {
+import Web from "../../img/website.png"
+import { ThemeContext } from "../../context";
+import { useContext, useRef, useState } from "react";
+const Website = () => {
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
     return (
-        <div class="sw-projects-cards">
-            <div class="card-content">
-
-                <div class="sw-projects-title-container">
-                    <div class="sw-project-title card-title">Portfolio Website</div>
+        <div class="p" style={{ backgroundColor: darkMode && "rgb(51, 51, 51)" }}>
+            <div className="p-block">
+                <div class="p-title">
+                    <h1><b>Portfolio Website</b></h1>
                 </div>
-                <div class="sw-projects-content">
-                    <div class="sw-projects-img-container">
-                        <img class="sw-projects-img" src={Website} alt="website" />
-                    </div>
-                    <div class="sw-projects-info-container">
-                        <div class="sw-projects-text">
-                            <ul>
-                                <li>React website built to showcase experience and projects I've had over the years  
-                                </li>
-                                <li>
-                                    Website utilises react hooks for dark mode and Emailjs for the email form
-                                </li>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div class="sw-projects-button-row">
-                            <button
-                                className="button"
-                                type="button"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    window.open('https://github.com/Jevelry', "_blank");
-                                }}
-                            > <p>VIEW CODE</p>
-                            </button>
-                        </div>
-                    </div>
 
+                <div class="p-content">
+                    <div class="p-img-wrapper">
+                        <img class="p-img" src={Web} alt="website" />
+                    </div>
+                    <div class="p-info-wrapper"> 
+                        <ul className="p-desc">
+                            <li>React website built to showcase my experience and projects I've had over the years  
+                            </li>
+                            <li>
+                                Website utilises react hooks for dark mode and Emailjs for the email form
+                            </li>
+                        </ul>               
+                    </div>
                 </div>
-            </div>
+
+                <div class="p-button-wrapper">
+                    <button
+                        className="p-button"
+                        type="button"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.open('github.com/Jevelry/my-website', "_blank");
+                        }}
+                    > <p>VIEW CODE</p>
+                    </button>
+                </div>
+                
+            </div>            
         </div>
     )
 }
 
-export default website;
+export default Website;
 
 

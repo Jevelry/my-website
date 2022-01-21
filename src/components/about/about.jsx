@@ -36,7 +36,14 @@ const About = () => {
                             This year, I am seeking an intership to gain 🔬 industry experience and 📚 bolster my skillset 
 
                         </p>
+                    
+                    
                     </div>
+                <div className="centre">
+                    <img src={Me}
+                        alt=""
+                        className="a-mobileimg" />
+                </div>
                 </div>
             
         </div>

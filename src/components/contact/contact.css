@@ -82,7 +82,7 @@ button{
     .c-wrapper {
         flex-direction: column;
         padding: 0px 50px;
-
+        align-items: center;
     }
     .c-title{
         font-size: 30px;
@@ -90,15 +90,27 @@ button{
     .c-info-item{
         margin: 20px 0px;
         width: 100%;
+        font-size: 15px;
+        text-align: center;
     }
     .c-desc{
         display: none;
     }
     form{
-        margin-top: 0px;
+        display: none;
+    }
+    .c {
+        height: 30vh;
+        position: relative;
+        overflow: hidden;
         display: flex;
-        flex-wrap: wrap;
-
+        align-items: center;
+    }
+    .c-title{
+        font-size: 2rem;
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
     }
     input{
         width: 35%;
@@ -106,5 +118,7 @@ button{
         margin: 10px;
         margin-left: 0px;
     }
-
+    .c-bg{
+        display: none;
+    }
 }

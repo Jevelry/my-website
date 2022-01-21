@@ -1,60 +1,57 @@
 import "./product.css"
-import Loopmania from "../../img/loopmania2.png"
-import Tcp from "../../img/tcp.png"
-
-const loopmania = () => {
+import tcp from "../../img/tcp.png"
+import { ThemeContext } from "../../context";
+import { useContext, useRef, useState } from "react";
+const Tcp = () => {
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
     return (
-        <div class="sw-projects-cards" id="sw-projects-card2">
-            <div class="card-content">
+        <div class="p" style={{ backgroundColor: darkMode && "rgb(51, 51, 51)" }}>
+            <div className="p-block">
 
-                <div class="sw-projects-title-container">
-                    <div class="sw-project-title card-title">LoopMania</div>
+                <div class="p-title">
+                    <h1><b>TCP over UDP</b></h1>
                 </div>
-                <div class="sw-projects-content">
-                    <div class="sw-projects-img-container">
-                        <img class="sw-projects-img" src={Tcp} alt="Loopmania game" />
+
+                <div class="p-content">
+                    <div class="p-img-wrapper">
+                        <img 
+                        class="p-img" 
+                        src={tcp} 
+                        alt="Loopmania game" />
                     </div>
-                    <div class="sw-projects-info-container">
-                        <div class="sw-projects-text">
-                            <ul>
-                                <li>Built a tower defence game using Java for the backend
-                                    and JavaFx for the frontend
-                                </li>
-                                <li>Coordinated with team members to realize the groups design goals.
-
-                                </li>
-                                <li>
-                                    Player travels around a looped path battling enemies
-                                    and acquiring gold to upgrade items. Player is allowed
-                                    to purchase items from a shop and place towers to help
-                                    clear the game
-                                </li>
-
-                                <li>
-                                    Constructed various towers,
-                                    enemies and allies in accordance to object-oriented programming principles
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="sw-projects-button-row">
-                            <button
-                                className="button"
-                                type="button"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    window.open('https://github.com/Jevelry', "_blank");
-                                }}
-                            > <p>VIEW CODE</p>
-                            </button>
-                        </div>
+                    <div class="p-info-wrapper">
+                        <ul className="p-desc">
+                            <li>
+                                Created python program to implement reliable transport protocol over the UDP protocol
+                            </li>
+                            <li>
+                                Protocol allows for transport of text files from sender to receiver
+                            </li>
+                            <li>
+                                Program contains a parameter to simulate packet loss. All transmissions are logged
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
+
+                <div class="p-button-wrapper">
+                    <button
+                        className="p-button"
+                        type="button"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.open('github.com/Jevelry/TCP-over-UDP', "_blank");
+                        }}
+                    > <p>VIEW CODE</p>
+                    </button>
+                </div>
+
             </div>
         </div>
     )
 }
 
-export default loopmania;
+export default Tcp;
 
 

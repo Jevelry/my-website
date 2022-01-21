@@ -29,8 +29,6 @@
     font-weight: 900;
         font-family: "Nunito",
         sans-serif;
-
-   
 }
 .i-title {
     height: 50px;
@@ -47,12 +45,13 @@
 
 }
 .i-desc{
+    margin-top: 10%;
     font-size: 1.5rem;
     font-weight: 400;
 
     
 }
-.logo{
+.i-logo{
     height: 12%;
     width: 7%;
     position: absolute;
@@ -74,7 +73,6 @@
     position: absolute;
     top: 160px;
     left: 250px;
-    
 }
 .i-nav{
     position: absolute;
@@ -111,6 +109,11 @@ clip-path: polygon(100% 0%, 0% 0%, 33% 28%, 20% 50%, 60% 63%, 32% 83%, 100% 100%
 @media screen and (max-width: 480px){
     .i{
         flex-direction: column;
+        justify-content: center;
+    }
+
+    .i-logo {
+        display: none;
     }
     .i-left-wrapper{
         padding:10px;
@@ -119,10 +122,25 @@ clip-path: polygon(100% 0%, 0% 0%, 33% 28%, 20% 50%, 60% 63%, 32% 83%, 100% 100%
         text-align: center;
         height: 100%;
     }
-    .i-desc{
+    .i-title {
         display: none;
     }
-    .i-nav{
+    .navbar{
+        display: none;
+    }
+    .i-name {
+        font-size: 4rem;
+    }
+    .i-img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+    .i-bg {
+        clip-path: circle(50% at 50% 50%);   
         display: none;
     }
 }

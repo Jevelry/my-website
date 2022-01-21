@@ -7,7 +7,7 @@ function intro() {
         <div className="i">
             <div className="i-left">
                 <div className="i-left-wrapper">    
-                    <img src={Logo} alt="logo" className="logo" />
+                    <img src={Logo} alt="logo" className="i-logo" />
                     <h1 className="i-name">KEVIN
                     <br/>HUANG
                     </h1>
@@ -41,7 +41,7 @@ function intro() {
                     </ul>
                    
                 </div>
-                {<img src={Face} alt="" className="i-img" /> }
+                {<img src={Face} alt="" className="i-img" />}
             </div>
         </div>
     )
