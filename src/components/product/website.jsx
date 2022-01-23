@@ -23,6 +23,9 @@ const Website = () => {
                             <li>
                                 Website utilises react hooks for dark mode and Emailjs for the email form
                             </li>
+                            <li>
+                                Hosted via GitHub pages
+                            </li>
                         </ul>               
                     </div>
                 </div>
