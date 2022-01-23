@@ -1,8 +1,7 @@
 import "./product.css"
 import tcp from "../../img/tcp.png"
 import { ThemeContext } from "../../context";
-import { useContext, useRef, useState } from "react";
-const Tcp = () => {
+import { useContext } from "react";const Tcp = () => {
     const theme = useContext(ThemeContext)
     const darkMode = theme.state.darkMode;
     return (

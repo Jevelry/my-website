@@ -4,7 +4,7 @@ import Contact from "./components/contact/contact";
 import Intro from "./components/intro/intro";
 import ProductList from "./components/productList/productList";
 import Toggle from "./components/toggle/toggle";
-import { ThemeContext, ThemeProvider } from "./context";
+import { ThemeContext } from "./context";
 const App = () => {
 
   const theme = useContext(ThemeContext)

@@ -1,8 +1,7 @@
 import "./product.css"
 import Web from "../../img/website.png"
 import { ThemeContext } from "../../context";
-import { useContext, useRef, useState } from "react";
-const Website = () => {
+import { useContext } from "react";const Website = () => {
     const theme = useContext(ThemeContext)
     const darkMode = theme.state.darkMode;
     return (

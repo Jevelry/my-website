@@ -3,7 +3,7 @@ import Me from "../../img/me-waterfall.jpg"
 
 
 import { ThemeContext } from "../../context";
-import { useContext, useRef, useState } from "react";
+import { useContext } from "react";
 
 const About = () => {
 
@@ -32,12 +32,8 @@ const About = () => {
                             <br/>
                             I'm currently studying a <strong>B.S. in Computer Science</strong> at the 🎓 
                             <strong> University of New South Wales. </strong>
-                            
                             This year, I am seeking an intership to gain 🔬 industry experience and 📚 bolster my skillset 
-
                         </p>
-                    
-                    
                     </div>
                 <div className="centre">
                     <img src={Me}

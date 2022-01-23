@@ -1,7 +1,7 @@
 import "./product.css"
 import Loop from "../../img/loopmania2.png"
 import { ThemeContext } from "../../context";
-import { useContext, useRef, useState } from "react";
+import { useContext } from "react";
 
 const Loopmania = () => {
     const theme = useContext(ThemeContext)
