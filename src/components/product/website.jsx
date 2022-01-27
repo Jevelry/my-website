@@ -20,7 +20,7 @@ import { useContext } from "react";const Website = () => {
                             <li>React website built to showcase my experience and projects I've had over the years  
                             </li>
                             <li>
-                                Website utilises react hooks for dark mode and Emailjs for the email form
+                                Website utilises react hooks for dark mode and EmailJs for the email form
                             </li>
                             <li>
                                 Hosted via GitHub pages
@@ -35,7 +35,7 @@ import { useContext } from "react";const Website = () => {
                         type="button"
                         onClick={(e) => {
                             e.preventDefault();
-                            window.open('github.com/Jevelry/my-website', "_blank");
+                            window.open('https://www.github.com/Jevelry/my-website', "_blank");
                         }}
                     > <p>VIEW CODE</p>
                     </button>

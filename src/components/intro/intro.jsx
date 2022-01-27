@@ -15,7 +15,7 @@ function intro() {
                     <div className="i-title">
                         <div className="i-title-wrapper">
                             <div className="i-title-item">Comp-Sci Student</div>
-                            <div className="i-title-item">Aspiring Network Engineer</div>
+                            <div className="i-title-item">Aspiring Engineer</div>
 
                         </div>
                     </div>

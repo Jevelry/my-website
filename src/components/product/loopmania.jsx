@@ -39,7 +39,7 @@ const Loopmania = () => {
                         type="button"
                         onClick={(e) => {
                             e.preventDefault();
-                            window.open('github.com/Jevelry/Loopmania', "_blank");
+                            window.open('https://www.github.com/Jevelry/Loopmania', "_blank");
                         }}
                     > <p>VIEW CODE</p>
                     </button>

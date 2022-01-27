@@ -50,7 +50,7 @@ const Contact = () => {
                         </div>
                         <div className="c-info-item">
                             <img className="c-icon" src={Linkedin} alt="linkedin" />
-                            linkedin.com/in/jevelry/
+                            linkedin.com/in/kevin-huang88
                         </div>
                     </div>
                 </div>
