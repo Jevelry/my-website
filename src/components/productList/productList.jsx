@@ -1,6 +1,8 @@
 import Loopmania from "../product/loopmania"
 import Website from "../product/website"
 import Tcp from "../product/tcp"
+import RestaurantTracker from "../product/restaurantTracker"
+import TrackworkBot from "../product/trackworkbot"
 import "./productList.css"
 
 const productList = () => {
@@ -13,10 +15,14 @@ const productList = () => {
 
             </div>
             <div className="p1-list">
-                <Loopmania/>
+                
                 <Website/>
+                <RestaurantTracker/>
+                <TrackworkBot/>
+                <Loopmania/>
                 <Tcp/>
-
+                
+                
             </div>
             <div className="pl-github">
                 <button
