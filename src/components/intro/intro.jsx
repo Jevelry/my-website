@@ -19,9 +19,7 @@ function intro() {
 
                         </div>
                     </div>
-                    <p className="i-desc">
-                        <i>Happiness is the journey not the destination</i>
-                    </p>
+                    
                 </div>
 
             </div>
